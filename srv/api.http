@@ -1,0 +1,17 @@
+### Get data for employee
+
+GET http://localhost:46137/browse/Employee 
+
+###POST data
+POST http://localhost:4004/browse/Employee 
+Content-Type: application/json
+
+                  {
+                   "empid":"IDPL05",
+                   "empname":"Manish",
+                   "street":"SBC",
+                   "city":"Pune",     
+                   "state":"Maharashtra"  ,
+                   "zip": "422003"
+                   
+                  }
