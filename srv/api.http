@@ -15,3 +15,67 @@ Content-Type: application/json
                    "zip": "422003"
                    
                   }
+
+###
+POST http://localhost:4004/browse/updateQR
+Content-Type: application/json
+ 
+{
+    "linkedinQR":"https://www.linkedin.com/in/priyanka-ladhe-385b41170/",
+    "ID":"7aeceb68-d9ba-4d4f-a0a7-df01dd5b8986"
+}
+
+###
+POST http://localhost:44639/browse/scan
+Content-Type: application/json
+
+{
+    "qrCodeID":"7aeceb68-d9ba-4d4f-a0a7-df01dd5b8986"
+}
+
+###POST data 
+POST http://localhost:4004/browse/Users 
+Content-Type: application/json
+
+                  {
+        
+                    "firstName": "Priyanka",
+                    "lastName": "Ladhe",
+                    "linkedinQR": "",
+                    "email": "priyanka.ladhe@initiumdigital.com"
+                   
+                  }    
+####
+POST http://localhost:41185/browse/testDetails 
+Content-Type: application/json
+
+                  {
+        
+                    "NAME": "Mitalee",
+                    "EMAIL": "priyanka.ladhe@initiumdigital.com",
+                    "STATUS": "Open",
+                    "DESCRIPTION": "Add test data"
+                   
+                  } 
+###
+POST http://localhost:40625/browse/UpdateData
+Content-Type: application/json
+
+{
+    "STATUS":"Closed",
+    "ID":"ccd04bda-9f62-4c9c-bdd1-77012c561ead"
+}
+
+###
+POST http://localhost:42329/browse/PullRequest
+Content-Type: application/json
+
+{
+    "EMAIL":"priyanka.ladhe@initiumdigital.com"
+}
+
+###
+GET http://localhost:41185/browse/testDetails?$filter=EMAIL eq 'Sagar@initiumdigital.com' and STATUS eq 'Open' 
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
